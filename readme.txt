@@ -10,7 +10,7 @@ Create wiki-style links to multiple destinations to help you link faster and pro
 
 == Description ==
 
-**Talk Wiki To Me** is based on the [WordPress](http://wordpress.org/extend/plugins/better-wiki-links/ "Better-{{Wiki}}-Links") system. However, **Talk Wiki To Me** allows you to define more that just one custom wiki tag. This allows you the ability to define your own tags to multiple different search engines, websites, directories, or reference sites. Defining your own wiki-like tags allows you to quickly compose links that use a common url structure, allowing you to spend more of your efforts composing posts and less time creating or managing the url links. It also protects your external links from becoming broken if an external site changes their url site structure, or paths.
+**Talk Wiki To Me** is based on the [Better-{{Wiki}}-Links](http://wordpress.org/extend/plugins/better-wiki-links/ "Better-{{Wiki}}-Links") system. However, **Talk Wiki To Me** allows you to define more that just one custom wiki tag. This allows you the ability to define your own tags to multiple different search engines, websites, directories, or reference sites. Defining your own wiki-like tags allows you to quickly compose links that use a common url structure, allowing you to spend more of your efforts composing posts and less time creating or managing the url links. It also protects your external links from becoming broken if an external site changes their url site structure, or paths.
 
 After installation, you can find the plugin settings under Talk Wiki To Me in the Settings section.  First, select your style of brackets you want to use for your linking, by default double brackets are used.
 
@@ -30,7 +30,7 @@ When the entry is rendered you will have a link to the NASA page on wikipedia.  
 
 Notes:
 
-A huge thanks to the Better-Wiki-Links plugin which initially allowed me to hard-code a version of this code for a few directories and search engines I found myself linking a lot to the msdn, wiki, and google. I AJAX’d the control panel, but I’ll admit that it is fragile – multiple requests can be fired prior to a successful answer. Sadly I changed the plugin enough that I had to drop the internationalization support.
+A huge thanks to the Better-Wiki-Links plugin which initially allowed me to hard-code a version of this code for a few directories and search engines I found myself linking a lot to the msdn, wiki, and google. I AJAXed the control panel, but I’ll admit that it is fragile; multiple requests can be fired prior to a successful answer. Sadly I changed the plugin enough that I had to drop the internationalization support.
 
 == Installation ==
 
@@ -58,7 +58,7 @@ Currently if you make that change, all the previous links will be rendered inert
 
 The admin page uses AJAX to make changes after any value changes.  For the radio buttons (i.e. same browser / new browser ), the option is saved as you select the new option.  For the text fields, the value is saved when you move out away from that control (onblur).  So to ensure that a setting is saved: radio buttons, select the radio button option and it should be saved; text inputs and text areas, make the change and tab away or select another field.
 
-Also, the page is written in what I would call 'fragile' AJAX.  When you click on a new input on the form, a new javascript event is fired even if one is already taking place.  This is essentially me writing poor code.  While testing, I found that it took about 300ms for each request to finish, so if you click on options faster than that you run the risk of having an option request not succeed.  I'll address this in a later update.
+Also, the page is written in what I would call 'fragile' AJAX.  When you click on a new input on the form, a new javascript event is fired even if one is already taking place.  This is essentially me writing poor code.  While testing, I found that it took about 300ms for each request to finish, so if you click on options faster than that you run the risk of having an option request not succeed.  I will address this in a later update.
 
 = What can I use for a TAG? =
 
@@ -66,7 +66,7 @@ In the TAG of [[TAG|TERM|TEXT]] you can use any character that is not a pipe cha
 
 = What can I use for the TERM? =
 
-Again, anything but the pipe character and be mindful of the spaces.  The TERM is appended to the end of the URL that is associated with the TAG.  So if the TAG wiki, translates to http://en.wikipedia.org/Wiki/ then the TERM will immediately follow the URL (i.e. http://www.en.wikipedia.org/Wiki/TERM.
+Again, anything but the pipe character and be mindful of the spaces.  The TERM is appended to the end of the URL that is associated with the TAG.  So if the TAG wiki, translates to http://en.wikipedia.org/Wiki/ then the TERM will immediately follow the URL (i.e. http://www.en.wikipedia.org/Wiki/TERM).
 
 You cannot, at the moment, specify for the TERM to be composed in center or other parts of the link.  It is something that I would like to add in the future.
 
