@@ -1,7 +1,7 @@
 === Plugin Name ===
 Contributors: burtlo, bass-blogger
-Donate link: http://example.com/
-Tags: comments, spam
+Donate link: http://www.recursivegames.com/wordpress
+Tags: wiki, link, links, linking
 Requires at least: 2.0.2
 Tested up to: 2.8
 Stable tag: 1.0.0
@@ -14,35 +14,23 @@ Create wiki-style links to multiple destinations to help you link faster and pro
 
 After installation, you can find the plugin settings under Talk Wiki To Me in the Settings section.  First, select your style of brackets you want to use for your linking, by default double brackets are used.
 
-*[[ ]], (( )), {{ }}
+* [[ ]], (( )), {{ }}
 
 After setting that bracket, there are some default wiki style tags already created for examples.  You can use these right away or you can create your own.
 
 With your new link tag created or using the existing one, you can get started by composing an entry and simply using the format:
 
-*[[TAG | TERM | TEXT ]]
+* [[TAG | TERM | TEXT ]]
 
 For example, if I want to use the wiki tag (created on installation of the plugin), I compose an entry and insert the following text:
 
-*[[wiki|NASA|My Dream Job]]
+* [[wiki|NASA|My Dream Job]]
 
-When the entry is rendered you will have a link to the NASA page on wikipedia.  If you would view the source code, you would roughly see that it was translated to: &lt;a href=”http://en.wikipedia.org/wiki/NASA”&gt;My dream job&lt;/a&gt;
+When the entry is rendered you will have a link to the NASA page on wikipedia.  If you would view the source code, you would roughly see that it was translated to: &lt;a href="http://en.wikipedia.org/wiki/NASA"&gt;My dream job&lt;/a&gt;
 
 Notes:
 
 A huge thanks to the Better-Wiki-Links plugin which initially allowed me to hard-code a version of this code for a few directories and search engines I found myself linking a lot to the msdn, wiki, and google. I AJAX’d the control panel, but I’ll admit that it is fragile – multiple requests can be fired prior to a successful answer. Sadly I changed the plugin enough that I had to drop the internationalization support.
-
-
-
-    Note that the `readme.txt` of the stable tag is the one that is considered the defining one for the plugin, so
-if the `/trunk/readme.txt` file says that the stable tag is `4.3`, then it is `/tags/4.3/readme.txt` that'll be used
-for displaying information about the plugin.  In this situation, the only thing considered from the trunk `readme.txt`
-is the stable tag pointer.  Thus, if you develop in trunk, you can update the trunk `readme.txt` to reflect changes in
-your in-development version, without having that information incorrectly disclosed about the current stable version
-that lacks those changes -- as long as the trunk's `readme.txt` points to the correct stable tag.
-
-    If no stable tag is provided, it is assumed that trunk is stable, but you should specify "trunk" if that's where
-you put the stable version, in order to eliminate any doubt.
 
 == Installation ==
 
@@ -70,9 +58,7 @@ Currently if you make that change, all the previous links will be rendered inert
 
 The admin page uses AJAX to make changes after any value changes.  For the radio buttons (i.e. same browser / new browser ), the option is saved as you select the new option.  For the text fields, the value is saved when you move out away from that control (onblur).  So to ensure that a setting is saved: radio buttons, select the radio button option and it should be saved; text inputs and text areas, make the change and tab away or select another field.
 
-Also, the page is written in what I would call 'fragile' AJAX.  When you click on a new input on the form, a new javascript event is fired even if one is already taking place.  This is essentially me writing poor code.  While testing, I found that it took about 300ms for each request to finish, so if you click on options faster than that you run the risk of having an option request not succeed.
-
-I'll address this in a later update.
+Also, the page is written in what I would call 'fragile' AJAX.  When you click on a new input on the form, a new javascript event is fired even if one is already taking place.  This is essentially me writing poor code.  While testing, I found that it took about 300ms for each request to finish, so if you click on options faster than that you run the risk of having an option request not succeed.  I'll address this in a later update.
 
 = What can I use for a TAG? =
 
