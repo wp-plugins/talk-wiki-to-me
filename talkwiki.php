@@ -1,11 +1,11 @@
 <?php
 /*
 Plugin Name: Talk Wiki To Me
-Plugin URI: http://www.recursivegames.com/wordpress/plugin/talkwiki
+Plugin URI: http://recursivegames.com/wordpress/?p=10
 Description: This Plug-in allows a user to define their own wiki-esque linking system.
 Version: 1.0.0
 Author: Franklin Webber
-Author URI: http://recursivegames.com/
+Author URI: http://recursivegames.com/wordpress
 
 License:
     Copyright 2009 Franklin Webber (email : franklin.webber@gmail.com)
