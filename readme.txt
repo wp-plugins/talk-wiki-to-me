@@ -1,4 +1,4 @@
-=== Plugin Name ===
+=== Talk Wiki To Me ===
 Contributors: burtlo, bass-blogger
 Donate link: http://www.recursivegames.com/wordpress
 Tags: wiki, link, links, linking
