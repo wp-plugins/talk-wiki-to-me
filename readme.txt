@@ -30,7 +30,7 @@ When the entry is rendered you will have a link to the NASA page on wikipedia.  
 
 Notes:
 
-A huge thanks to the Better-Wiki-Links plugin which initially allowed me to hard-code a version of this code for a few directories and search engines I found myself linking a lot to the msdn, wiki, and google. I AJAXed the control panel, but I’ll admit that it is fragile; multiple requests can be fired prior to a successful answer. Sadly I changed the plugin enough that I had to drop the internationalization support.
+A huge thanks to the Better-Wiki-Links plugin which initially allowed me to hard-code a version of this code for a few directories and search engines I found myself linking a lot to the msdn, wiki, and google. I AJAXed the control panel, but I`ll admit that it is fragile; multiple requests can be fired prior to a successful answer. Sadly I changed the plugin enough that I had to drop the internationalization support.
 
 == Installation ==
 
