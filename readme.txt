@@ -86,12 +86,14 @@ You can read more about it at [wikipedia](http://en.wikipedia.org/wiki/Nofollow 
 
 1. Selecting a bracket style, choose between [[]], (()), {{}}.  These changes are global and used for all link-tags.
 1. Shows the administrative options panel that you can use to manage your link-tags that you create.
+1. When you compose an entry you use the format [[TAG|TERM|TEXT]]
+1. It will automatically translate to the TAG into the URL, attaches the TERM to the end, and then uses the text you specified in your entry.
 
 == Changelog ==
 
 = 1.0 =
 * Released.
 
-== Arbitrary section ==
+== Thanks ==
 
 A huge thanks to the Better-Wiki-Links plugin which initially allowed me to hard-code a version of this code for a few directories and search engines I found myself linking a lot to the msdn, wiki, and google.
