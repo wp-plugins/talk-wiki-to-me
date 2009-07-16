@@ -20,7 +20,7 @@ After setting that bracket, there are some default wiki style tags already creat
 
 With your new link tag created or using the existing one, you can get started by composing an entry and simply using the format:
 
-* [[TAG | TERM | TEXT ]]
+* [[TAG|TERM|TEXT]]
 
 For example, if I want to use the wiki tag (created on installation of the plugin), I compose an entry and insert the following text:
 
@@ -62,7 +62,7 @@ Also, the page is written in what I would call 'fragile' AJAX.  When you click o
 
 = What can I use for a TAG? =
 
-In the TAG of [[TAG|TERM|TEXT]] you can use any character that is not a pipe character.  Currently spaces are not trimmed from the front or the back of the TAG so [[ TAG |TERM|TEXT]] will not be equivalent to [[TAG|TERM|TEXT]].
+In the TAG of [[TAG|TERM|TEXT]] you can use any character that is not a pipe character.  Currently spaces are not trimmed from the front or the back of the TAG so [[ TAG|TERM|TEXT]] will not be equivalent to [[TAG|TERM|TEXT]].
 
 = What can I use for the TERM? =
 
